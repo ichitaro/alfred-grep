@@ -66,18 +66,18 @@ To specify multiple options, just add the character of the option without spaces
 
 ![](images/fig09.png)
 
-The pattern is an unquoted string like `h` or is a regular expression literal like `/.../`. It is optionally followed by the flag which determines the search target like `-x`.
+The pattern is an unquoted string like `h`, or is a regular expression literal like `/.../`. It is optionally followed by the flag which determines the search target like `-x`.
 
 The `-x` flag means "search for file extensions with that pattern".
 
 ---
 
-### Files containing the pattern in its path
+### Files containing the pattern in their path
 The `-p` flag means "search for file paths with that pattern".
 
 ![](images/fig10.png)
 
-This example selects the files where its extensions contain "h" and its paths contain "gl/".
+This example selects the files where their extensions contain "h" and their paths contain "gl/".
 
 ---
 
@@ -101,7 +101,7 @@ Regular expression pattern is also available by using the `/.../` literal.
 
 ---
 
-### Files containing the pattern in its contents
+### Files containing the pattern in their contents
 The `-c` flag means "search for file contents with that pattern".
 
 ![](images/fig13.png)
