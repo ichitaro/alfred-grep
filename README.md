@@ -1,5 +1,8 @@
 alfred-grep
 ================
+
+![](images/demo.gif)
+
 An Alfred workflow for:
 - searching through one or more directory trees of a file system with a regular expression against the file name like the `find` command.
 - searching for lines matching a regular expression like the `grep` command.
