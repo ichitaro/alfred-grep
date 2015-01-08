@@ -1,21 +1,27 @@
 alfred-grep
 ================
 
-![](images/demo.gif)
-
 An Alfred workflow for:
-- searching through one or more directory trees of a file system with a regular expression against the file name like the `find` command.
+- searching for directory trees with a regular expression against the file name like the `find` command.
 - searching for lines matching a regular expression like the `grep` command.
-- opening the matching files or lines directly in the text editor such as MacVim, Emacs, Sublime Text, and TextMate
+- opening the matching files or lines directly in your text editor such as MacVim, Emacs, Sublime Text, and TextMate
 
 ## Requirements
-- [Alfred 2](http://www.alfredapp.com/#download)
 - [Alfred Powerpack](https://buy.alfredapp.com/)
 - OS X Mavericks or higher (Ruby 1.9.3 or higher)
-- Any text editor which allows the external program to open a file and go to a specific line
+- Text editor which allows you to open a file and go to a specific line
+
+## Install
+1. [Download](https://github.com/ichitaro/alfred-grep/blob/master/grep.alfredworkflow?raw=true) and open the workflow
+2. Review the workflow to add custom hotkeys. An example is shown below:
+
+![](images/fig15.png)
+
+- `ctrl+command+/` Run the workflow with last query
+- `ctrl+command+j` Find Next
+- `ctrl+command+k` Find Previous
 
 ## Usage
-### Getting started
 In Alfred's File Actions, select `grep` to specify where the workflow searches for files in.
 
 ![](images/fig01.png)
@@ -38,8 +44,7 @@ To open the results with your text editor, just select it.
 
 By default, Sublime Text will be launched.  To change the default application, edit `settings.json` in the workflow directory.
 
----
-
+## Advanced usage
 ### List only directories
 The `--d` flag means selecting only directories.
 
@@ -117,17 +122,6 @@ The `-!` flag means "exclude pattern".
 ![](images/fig14.png)
 
 Note that `/foo/ -pg!` is expanded as `/foo/ -p! /foo/ -g!`.
-
----
-
-### Hotkeys
-
-![](images/fig15.png)
-
-Review the workflow to add custom hotkeys. The defaults are as follows:
-- `ctrl+command+/` Run the workflow with last query
-- `ctrl+command+j` Find Next
-- `ctrl+command+k` Find Previous
 
 ---
 
